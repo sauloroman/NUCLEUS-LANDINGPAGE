@@ -1,0 +1,142 @@
+/* 600px = 37.5em */
+@media ( min-width: 37.5em ) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    column-gap: 5rem;
+  }
+
+  .hero {
+    background-size: 70%;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+  }
+
+  .hero__description {
+    align-self: center;
+  }
+  
+  .heading-primary {
+    text-align: left;
+    font-size: 4.8rem;
+    line-height: 1.2;
+  }
+
+  .menu__list {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .hero__image {
+    width: 80%;
+  }
+
+  .menu__listItem:link,
+  .menu__listItem:visited {
+    color: var(--color-blanco);
+  }
+
+  .hero__imageBox::after,
+  .hero__imageBox::before {
+    padding-bottom: 0;
+  }
+
+  .caracteristicas {
+    grid-column: 2 / 3;
+  }
+
+  .que__imagenBox {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .que__imagen {
+    width: 70%;
+  }
+
+  .seguro__imageBox {
+    align-self: center;
+  }
+
+  .comisiones__titulo {
+    text-align: left;
+  }
+
+  .list__item--flex {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .section-comisiones {
+    padding-bottom: 8rem 0;
+  }
+
+  .comision__porcentaje  {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .comisiones__imageBox {
+    align-self: end;
+  }
+
+  .comisiones__image {
+    width: 90%;
+  }
+
+  .footer-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+/* 900px = 56.25em */
+
+@media (min-width: 56.25em) {
+  html {
+    font-size: 56.5%;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .hero__image {
+    width: 45%;
+  }
+
+  .btn:link,
+  .btn:visited {
+    display: block;
+    width: 50%;
+  }
+
+  .caracteristicas {
+    align-self: center;
+  }
+  
+  .que__imagen {
+    width: 45%;
+  }
+
+  .seguro__descripcion {
+    align-self: center;
+  }
+
+  .comisiones__porcentajes {
+    align-self: center;
+  }
+
+  .comisiones__image {
+    width: 60%;
+  }
+
+}

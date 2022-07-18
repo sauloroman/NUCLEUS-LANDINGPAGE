@@ -1,0 +1,336 @@
+:root {
+  --color-morado: #6834a6;
+  --color-morado-oscuro: #3e1f64;
+  --color-blanco: #fff;
+  --color-negro: #000;
+}
+
+/* ########################################## */
+/* GENERALES */
+/* ########################################## */
+
+*,
+*::before,
+*::after {
+  margin: 0; 
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+/* ########################################## */
+/* CLASES REUTILIZABLES */
+/* ########################################## */
+
+.container {
+  width: 120rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.heading-primary {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.7;
+  margin-bottom: 5rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  font-weight: 900;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.heading--white {
+  color: var(--color-blanco);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: var(--color-blanco);
+  background-color: var(--color-morado);
+  width: 100%;
+  transition: all .4s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #3e1f64;
+}
+
+.section-space {
+  padding: 8rem 0;
+}
+
+.centrar-imagen-grid {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LISTAS */
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.lista__item {
+  padding: 2rem;
+  box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all .4s;
+}
+
+.lista__item:hover {
+  transform: scale(1.05);
+}
+
+.lista__item--white {
+  background-color: var(--color-blanco);
+}
+
+.list__item--flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  row-gap: 6.2rem;
+}
+
+/* ########################################## */
+/* HERO */
+/* ########################################## */
+
+.hero {
+  height: 100%;
+  background-image: url('/Img/header_bg.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 12rem;
+  padding-bottom: 8rem;
+}
+
+.header {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header__logo {
+  height: 14rem;
+}
+
+.menu__list {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.menu__listItem:link,
+.menu__listItem:visited {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.hero__description {
+  text-align: center;
+}
+
+.hero__imageBox {
+  position: relative;
+}
+
+.hero__image {
+  width: 50%;
+}
+
+.hero__imageBox::after,
+.hero__imageBox::before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__imageBox::after {
+  width: 50rem;
+  padding-bottom: 50rem;
+  background-color: #a485ca;
+  z-index: -2;
+}
+
+.hero__imageBox::before {
+  width: 35rem;
+  padding-bottom: 35rem;
+  background-color: #c3aedb;
+  z-index: -1;
+}
+
+/* ########################################## */
+/* ¿QUÉ ES? */
+/* ########################################## */
+
+.caracteristica {
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.caracteristica__titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.caracteristica__titulo span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-morado);
+}
+
+.caracteristica__icon {
+  font-size: 5rem;
+  color: var(--color-morado);
+}
+
+.que__imagen {
+  width: 50%;
+}
+
+
+/* ########################################## */
+/* SEGURO */
+/* ########################################## */
+
+.section-seguro {
+  background-color: var(--color-morado);
+  transform: skewY(8deg);
+  margin-top: 8rem;
+  padding: 15rem 2rem;
+}
+
+.section-seguro .container {
+  transform: skewY(-8deg);
+}
+
+
+/* ########################################## */
+/* COMISIONES */
+/* ########################################## */
+
+.section-comisiones {
+  margin-top: 8rem;
+  padding: 8rem 0 0;
+}
+
+.comisiones__titulo {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  line-height: 1.7;
+}
+
+.comision__porcentaje {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--color-morado);
+}
+
+.comisiones__image {
+  width: 60%;
+}
+
+/* ########################################## */
+/* TESTIMONIALES */
+/* ########################################## */
+
+.section-testimoniales {
+  background-color: var(--color-morado);
+}
+
+.testimonio {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.testimonio__image {
+  height: 3.6rem;
+}
+
+.testimonio__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.testimonio__autor {
+  margin-top: auto;
+  text-align: right;
+  font-style: normal;
+  font-weight: 900;
+  color: var(--color-morado);
+}
+
+/* ########################################## */
+/* FOOTER */
+/* ########################################## */
+
+.footer {
+  background-color: var(--color-morado-oscuro);
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu--white .menu__listItem:link,
+.menu--white .menu__listItem:visited {
+  color: var(--color-blanco);
+}
